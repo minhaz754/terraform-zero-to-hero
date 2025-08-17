@@ -4,11 +4,11 @@ provider "aws" {
 }
 
 variable "cidr" {
-  default = "10.0.0.0/16"
+  default = "172.168.0.0/16"
 }
 
 resource "aws_key_pair" "example" {
-  key_name   = "terraform-demo-abhi"  # Replace with your desired key name
+  key_name   = "terraform-minhaz-key"  # Replace with your desired key name
   public_key = file("~/.ssh/id_rsa.pub")  # Replace with the path to your public key file
 }
 
